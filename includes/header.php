@@ -31,5 +31,6 @@
 </div>
 
 <div class="container text-center px-0 py-2">
-    <?php include 'includes/messages.php' ?>
+    <?php include 'includes/messages.php'; ?>
+
 </div>

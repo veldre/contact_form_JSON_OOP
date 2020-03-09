@@ -47,10 +47,9 @@ class UsersController
 //// encode back to json and save to same file
         file_put_contents('users.json', json_encode($json_arr));
 
-        $_SESSION['msg'] = "User $name has been added!";
+        $_SESSION['msg'] = "Lietotājs $name pievienots!";
         $_SESSION['msgClass'] = "success";
-        unset($_SESSION['name']);
-        unset($_SESSION['birthdate']);
+        unset($_SESSION);
 
         header("location: /list");
     }

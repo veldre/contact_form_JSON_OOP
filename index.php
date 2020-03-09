@@ -11,12 +11,14 @@ switch ($redirect) {
     case '/list' :
         require __DIR__ . '/Views/index.php';
         break;
-    case '/store' :
-        require __DIR__ . '/Views/store.php';
-        break;
     default:
         require __DIR__ . '/Views/create.php';
         break;
 }
 
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if ($redirect === '/store') {
+        require __DIR__ . '/Views/store.php';
+    }
+}

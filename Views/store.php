@@ -1,6 +1,7 @@
 <?php
 
 require 'includes/functions.php';
+
 use Controllers\UsersController;
 
 
@@ -13,15 +14,16 @@ if (isset($_POST['submit'])) {
 
 
     if (checkFields($name, $birthdate)) {
-        $_SESSION['msg'] = "Please fill all fields!";
+        $_SESSION['msg'] = "Lūdzu, aizpildiet visus laukus!";
         $_SESSION['msgClass'] = "danger";
         $_SESSION['inputField'] = "form-control is-invalid";
         header("location: /create");
         exit;
     }
+    unset($_SESSION['inputField']);
 
     if (validateLetters($name)) {
-        $_SESSION['msg'] = "Name must contain only letters!";
+        $_SESSION['msg'] = "Lūdzu, lietojiet tikai latīņu alfabētu, bez garumzīmēm un mīkstinājuma zīmēm!";
         $_SESSION['msgClass'] = "danger";
         $_SESSION['inputField'] = "form-control is-invalid";
         header("location: /create");
@@ -29,7 +31,7 @@ if (isset($_POST['submit'])) {
     }
 
     if (validateFullName($name)) {
-        $_SESSION['msg'] = "Name must contain both first and last name!";
+        $_SESSION['msg'] = "Lūdzu, ierakstiet gan vārdu, gan uzvārdu!";
         $_SESSION['msgClass'] = "danger";
         $_SESSION['inputField'] = "form-control is-invalid";
         header("location: /create");
@@ -37,23 +39,24 @@ if (isset($_POST['submit'])) {
     }
 
     if (checkAge($birthdate)) {
-        $_SESSION['msg'] = "You must be at least 18 years old!";
+        $_SESSION['msg'] = "Jums ir jābūt vismaz 18 gadus vecam(-ai)!";
         $_SESSION['msgClass'] = "danger";
         $_SESSION['dateField'] = "form-control is-invalid";
         header("location: /create");
         exit;
     }
+    unset($_SESSION['dateField']);
 
     if (empty($_FILES['photo']['name'])) {
 
-        $_SESSION['msg'] = 'No image added!';
+        $_SESSION['msg'] = 'Nav pievienots attēls!';
         $_SESSION['msgClass'] = 'danger';
         header("location: /create");
         exit;
     }
 
     if (validateImage()) {
-        $_SESSION['msg'] = 'Image file must have "PNG" or "JPG" extension!';
+        $_SESSION['msg'] = 'Attēlam ir jābūt ar "jpg" vai "png" faila paplašinājumu!';
         $_SESSION['msgClass'] = 'danger';
         header("location: /create");
         exit;
