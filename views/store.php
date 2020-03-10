@@ -1,7 +1,5 @@
 <?php
 
-require 'includes/functions.php';
-
 use Controllers\UsersController;
 
 
@@ -22,13 +20,15 @@ if (isset($_POST['submit'])) {
     }
     unset($_SESSION['inputField']);
 
+
     if (validateLetters($name)) {
-        $_SESSION['msg'] = "Lūdzu, lietojiet tikai latīņu alfabētu, bez garumzīmēm un mīkstinājuma zīmēm!";
+        $_SESSION['msg'] = "Neatļauti simboli!";
         $_SESSION['msgClass'] = "danger";
         $_SESSION['inputField'] = "form-control is-invalid";
         header("location: /create");
         exit;
     }
+
 
     if (validateFullName($name)) {
         $_SESSION['msg'] = "Lūdzu, ierakstiet gan vārdu, gan uzvārdu!";
@@ -56,7 +56,7 @@ if (isset($_POST['submit'])) {
     }
 
     if (validateImage()) {
-        $_SESSION['msg'] = 'Attēlam ir jābūt ar "jpg" vai "png" faila paplašinājumu!';
+        $_SESSION['msg'] = 'Attēlam ir jābūt ar "jpg", "jpeg" vai "png" faila paplašinājumu!';
         $_SESSION['msgClass'] = 'danger';
         header("location: /create");
         exit;

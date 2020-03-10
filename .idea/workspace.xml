@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5f239dc-ec24-4881-a9f5-93fd69f3d6aa" name="Default Changelist" comment="" />
+    <list default="true" id="c5f239dc-ec24-4881-a9f5-93fd69f3d6aa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/store.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/store.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +32,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -48,7 +58,8 @@
       <updated>1583485355135</updated>
       <workItem from="1583485357143" duration="11384000" />
       <workItem from="1583519121755" duration="19626000" />
-      <workItem from="1583730557097" duration="5042000" />
+      <workItem from="1583730557097" duration="11279000" />
+      <workItem from="1583822747193" duration="13974000" />
     </task>
     <servers />
   </component>
@@ -64,18 +75,18 @@
       <screen x="0" y="27" width="1920" height="986" />
     </state>
     <state x="693" y="277" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1920.986@0.27.1920.986" timestamp="1583528664757" />
-    <state x="703" y="277" key="FileChooserDialogImpl" timestamp="1583731918846">
+    <state x="703" y="277" key="FileChooserDialogImpl" timestamp="1583828148980">
       <screen x="0" y="27" width="1920" height="986" />
     </state>
-    <state x="703" y="277" key="FileChooserDialogImpl/0.27.1920.986@0.27.1920.986" timestamp="1583731918846" />
-    <state x="712" y="439" width="486" height="159" key="NewPhpFileDialog" timestamp="1583691373507">
+    <state x="703" y="277" key="FileChooserDialogImpl/0.27.1920.986@0.27.1920.986" timestamp="1583828148970" />
+    <state x="712" y="439" width="486" height="159" key="NewPhpFileDialog" timestamp="1583774954772">
       <screen x="0" y="27" width="1920" height="986" />
     </state>
-    <state x="712" y="439" width="486" height="159" key="NewPhpFileDialog/0.27.1920.986@0.27.1920.986" timestamp="1583691373507" />
-    <state x="100" y="125" width="1720" height="788" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1583737939014">
+    <state x="712" y="439" width="486" height="159" key="NewPhpFileDialog/0.27.1920.986@0.27.1920.986" timestamp="1583774954772" />
+    <state x="100" y="125" width="1720" height="788" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1583835428645">
       <screen x="0" y="27" width="1920" height="986" />
     </state>
-    <state x="100" y="125" width="1720" height="788" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.27.1920.986@0.27.1920.986" timestamp="1583737939014" />
+    <state x="100" y="125" width="1720" height="788" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.27.1920.986@0.27.1920.986" timestamp="1583835428645" />
     <state x="624" y="236" key="run.anything.popup" timestamp="1583566001937">
       <screen x="0" y="27" width="1920" height="986" />
     </state>

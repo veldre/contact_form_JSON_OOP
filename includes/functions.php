@@ -8,30 +8,35 @@ function checkFields(string $name, string $birthdate): bool
 
 function validateLetters(string $name): bool
 {
-    return (preg_match("/[^A-Za-z -]/", $name)) ?? true;
+    return (preg_match("/[^A-Za-zāčēģīķļņšūžĀČĒĢĪĶĻŅŠŪŽ -]/", $name)) ?? true;
 }
 
 
 function validateFullName(string $name): bool
 {
     return (strpos($name, " ") === false) ?? true;
-
 }
 
 
 function checkAge(string $birthdate): bool
 {
-    return (time() < strtotime('+18 years', strtotime($birthdate))) ?? true;
+    return (strtotime($birthdate)>1015756850) ?? true;
 }
 
 
 function validateImage(): bool
 {
-    $extensions = ['jpg', 'png'];
-    $fileNameParts = explode('.', $_FILES['photo']['name']);
-    $fileExtension = strtolower(end($fileNameParts));
-
-    return (!in_array($fileExtension, $extensions)) ?? true;
+    if (isset($_FILES['photo']['tmp_name'])) {
+        $finfo = finfo_open(FILEINFO_MIME_TYPE);
+        $mime = finfo_file($finfo, $_FILES['photo']['tmp_name']);
+        if ($mime == 'image/png' || $mime == 'image/jpeg') {
+            finfo_close($finfo);
+            return false;
+        }
+        finfo_close($finfo);
+        return true;
+    }
+    exit;
 }
 
 

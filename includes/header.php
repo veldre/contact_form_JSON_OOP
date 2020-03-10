@@ -5,6 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/flatly/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-yrfSO0DBjS56u5M+SjWTyAHujrkiYVtRYh2dtB3yLQtUz3bodOeialO59u5lUCFF"
+          crossorigin="anonymous">
     <title>Pieteikuma forma</title>
 </head>
 
@@ -31,6 +34,5 @@
 </div>
 
 <div class="container text-center px-0 py-2">
-    <?php include 'includes/messages.php'; ?>
-
+    <?php include __DIR__ . '/messages.php'; ?>
 </div>
